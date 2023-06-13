@@ -18,7 +18,11 @@
     "@angular/platform-browser": "^16.0.0",
     "@angular/platform-browser-dynamic": "^16.0.0",
     "@angular/router": "^16.0.0",
+    "cypress": "^12.14.0",
+    "e2e": "^0.0.8",
     "rxjs": "~7.8.0",
+    "test": "^3.3.0",
+    "tests": "^0.4.2",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"
   },
