@@ -42,7 +42,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: cypress-videos
-          path: cypress/videos/
+          path: /
 
   download:
     needs: build
@@ -55,4 +55,4 @@ jobs:
           name: cypress-videos
 
       - name: Move videos to public directory
-        run: mv cypress/videos/ public/videos/
+        run: mv /
