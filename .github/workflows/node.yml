@@ -41,18 +41,5 @@ jobs:
         if: always() # Upload the video artifact regardless of previous steps' success/failure
         uses: actions/upload-artifact@v2
         with:
-          name: cypress-videos
+          name: videos
           path: /
-
-  download:
-    needs: build
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Download video artifact
-        uses: actions/download-artifact@v2
-        with:
-          name: cypress-videos
-
-      - name: Move videos to public directory
-        run: mv /
