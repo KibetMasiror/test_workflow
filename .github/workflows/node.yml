@@ -27,7 +27,7 @@ jobs:
         run: npm install
 
       - name: Run tests
-        run: npx cypress run
+        run: ng test
 
       - name: Build
         if: success()
