@@ -37,9 +37,9 @@ jobs:
         if: success()
         run: npm run build
 
-      - name: Upload video artifact
-        if: always() # Upload the video artifact regardless of previous steps' success/failure
+      - name: Download Cypress video
+        if: always()
         uses: actions/upload-artifact@v2
         with:
-          name: videos
-          path: /
+          name: Cypress Video
+          path: cypress/videos/
